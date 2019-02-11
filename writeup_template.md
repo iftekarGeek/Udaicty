@@ -156,3 +156,12 @@ Here's a [link to my video result](./project_video_output.mp4)
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 It was really hard to implement the sliding window technique and its visualization.
+
+The issues i have faced were almost due to lighting conditions, shadows, discoloration.
+It wasn't difficult to use the threshold parameters to calculate the pipeline to do well on the provided project video.I tried to extend the same pipeline to the challenge video but didnt work as planned.
+
+To make it robust,
+1. In some places of video. there are shadows, need to do brightness adjustment filter using CLAHE algorithm.
+2. It would be better if we apply Exponential smoothing technique.
+3. As you suggested, need to determine land width in pixels using previously determined polynomial coefficients instead of hardcoding 800.
+4. It would be better if performs sanity checks
